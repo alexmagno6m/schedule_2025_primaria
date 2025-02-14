@@ -19,7 +19,7 @@ server = app.server
                      placeholder="Seleccione un curso o profesor"
 '''
 app.layout = html.Div([
-    html.H2('Horario General Primaria 2024'),
+    html.H2('Horario General Primaria 2025'),
     html.H2('Colegio Antonio Baraya IED'),
     html.Div([
         "Consulte su horario individual "
@@ -116,10 +116,7 @@ app.layout = html.Div([
 
     ),
     html.Div([
-        "PA: Bloques de Permanencia, por asignar a Clase o TP; HE: Horas extras. Actualizado: 13/02/24-15:57"
-    ]),
-    html.Div([
-        html.H3('Powered by BitSmart | Alexander Acevedo (2016-2024)')
+        html.H3('Powered by Dash - Created by BitSmart | Alexander Acevedo (2016-2025)')
     ])
 
 ])
