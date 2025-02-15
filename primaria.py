@@ -10,6 +10,24 @@ df = pd.read_csv(r, sep=';')
 df['CEDULA']=df['CEDULA'].astype(str)
 df = df[['CEDULA', 'PROFESOR_O_CURSO', 'DIA','FRANJA', '1', '2', '3', '4', '5', '6', '7', '8']]
 app = Dash(__name__)
+app.index_string = """
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Horario Secundaria 2025</title>
+        {%metas%}
+        {%favicon%}
+        {%css%}
+    </head>
+    <body>
+        {%app_entry%}
+        {%config%}
+        {%scripts%}
+        {%renderer%}
+    </body>
+</html>
+"""
 server = app.server
 
 ''' For input field
