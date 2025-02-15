@@ -15,7 +15,7 @@ app.index_string = """
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Horario Secundaria 2025</title>
+        <title>Horario Primaria 2025</title>
         {%metas%}
         {%favicon%}
         {%css%}
